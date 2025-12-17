@@ -6,7 +6,8 @@ import ai from "../assets/Service Without the Wait.png";
 import automation from "../assets/Your Operations. Reimagined.png";
 import tracking from "../assets/Transparency, Perfected.png";
 import camera from "../assets/camera.png";
-// import dash from "../assets/bulletpoint.png";
+import updates from "../assets/Live Updates.png";
+import support from "../assets/7 Support.png";
 
 const AllFeatures = () => {
   return (
@@ -16,7 +17,6 @@ const AllFeatures = () => {
         {/* ===================== 1. COMPUTER VISION ===================== */}
         <div className="feature-row computer-vision">
 
-          {/* LEFT CONTENT */}
           <div className="feature-content">
             <span className="pill">Computer Vision</span>
             <h2>Intelligence You Can See</h2>
@@ -29,7 +29,6 @@ const AllFeatures = () => {
             </p>
 
             <ul className="feature-list">
-                
               <li>Clear, instant insights</li>
               <li>Predictive detection</li>
               <li>Confident repair estimates</li>
@@ -40,32 +39,23 @@ const AllFeatures = () => {
             </p>
           </div>
 
-          {/* RIGHT IMAGE */}
-          <div className="feature-image">
+          <div className="feature-image cv-image">
             <img src={vision} alt="Computer Vision" />
 
-            {/* Instant Analysis – IMAGE KE ANDAR */}
-            <div className="instant-analysis-badge">
-              <img src={camera} alt="Camera" />
+            {/* Instant Analysis – bottom right (image ke andar) */}
+            <div className="badge instant-analysis">
+              <img src={camera} alt="" />
               <div>
                 <strong>Instant Analysis</strong>
                 <p>95% Accuracy</p>
               </div>
             </div>
           </div>
-
-          {/* 24/7 Support – IMAGE KE BAHAR (ROW KE ANDAR) */}
-          {/* <div className="support-badge">
-            <img src={camera} alt="Camera" />
-            <div>
-              <strong>24/7 Support</strong>
-              <p>Instant Response</p>
-            </div>
-          </div> */}
         </div>
 
         {/* ===================== 2. CONVERSATIONAL AI ===================== */}
-        <div className="feature-row reverse">
+        <div className="feature-row conversational-ai reverse">
+
           <div className="feature-content">
             <span className="pill2">Conversational AI</span>
             <h2>Service Without the Wait</h2>
@@ -87,13 +77,23 @@ const AllFeatures = () => {
             </p>
           </div>
 
-          <div className="feature-image">
+          <div className="feature-image ca-image">
             <img src={ai} alt="Conversational AI" />
+
+            {/* 24/7 Support – image ke left bottom */}
+            <div className="badge support-247">
+              <img src={support} alt="" />
+              <div>
+                <strong>24/7 Support</strong>
+                <p>Instant Response</p>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* ===================== 3. INTELLIGENT AUTOMATION ===================== */}
-        <div className="feature-row">
+        <div className="feature-row intelligent-automation">
+
           <div className="feature-content">
             <span className="pill3">Intelligent Automation</span>
             <h3>Your Operations. Reimagined</h3>
@@ -115,13 +115,14 @@ const AllFeatures = () => {
             </p>
           </div>
 
-          <div className="feature-image">
+          <div className="feature-image ia-image">
             <img src={automation} alt="Automation" />
           </div>
         </div>
 
         {/* ===================== 4. REAL-TIME TRACKING ===================== */}
-        <div className="feature-row reverse">
+        <div className="feature-row real-time-tracking reverse">
+
           <div className="feature-content">
             <span className="pill4">Real-Time Tracking</span>
             <h2>Transparency, Perfected</h2>
@@ -137,8 +138,17 @@ const AllFeatures = () => {
             </p>
           </div>
 
-          <div className="feature-image">
+          <div className="feature-image rt-image">
             <img src={tracking} alt="Tracking" />
+
+            {/* Live Updates – image ke saath stick */}
+            <div className="badge live-updates">
+              <img src={updates} alt="" />
+              <div>
+                <strong>Live Updates</strong>
+                <p>Real-time status</p>
+              </div>
+            </div>
           </div>
         </div>
 

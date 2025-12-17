@@ -63,16 +63,17 @@
 
 .footer-socials {
   display: flex;
-  gap: 16px;
+  height: 40px;
+  gap: 10px;
 }
 
 /* SOCIAL ICON CIRCLE */
 .footer-socials img {
-  width: 44px;
-  height: 44px;
+  width: 59px;
+  height: 59px;
 
   border-radius: 50%;
-  background: rgba(33, 140, 172, 0.15);
+  /* background: rgba(33, 140, 172, 0.15); */
 
   padding: 10px;
   box-sizing: border-box;
