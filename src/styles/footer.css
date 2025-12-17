@@ -1,0 +1,123 @@
+/* ================= FOOTER ================= */
+.footer {
+  width: 100%;
+  
+  background: #ffffff;
+  padding: 80px 0 0;
+  border-top: 1px solid #eee;
+  overflow-x: hidden; /* 🔒 no scroll */
+}
+
+/* ================= TOP ================= */
+.footer-top {
+  
+  max-width: 1232px;
+  height: 150px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* ================= BRAND ================= */
+.footer-brand {
+  max-width: 260px;
+  font-family: proxima-nova, sans-serif;
+}
+
+.footer-logo {
+  height: 34px;
+  margin-bottom: 14px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ================= COLUMNS ================= */
+.footer-col h4,
+.footer-connect h4 {
+  font-family: proxima-nova, sans-serif;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.footer-col a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* ================= CONNECT ================= */
+.footer-connect {
+  text-align: left;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 16px;
+}
+
+/* SOCIAL ICON CIRCLE */
+.footer-socials img {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background: rgba(33, 140, 172, 0.15);
+
+  padding: 10px;
+  box-sizing: border-box;
+  object-fit: contain;
+
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.footer-socials img:hover {
+  transform: translateY(-2px);
+}
+
+/* ================= BOTTOM ================= */
+.footer-bottom {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: proxima-nova, sans-serif;
+  font-size: 13px;
+  color: #666;
+}
+
+/* ================= LINKS ================= */
+.footer-links span {
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}

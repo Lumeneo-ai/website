@@ -1,0 +1,76 @@
+/* ============================= */
+/* GLOBAL RESET                  */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================= */
+/* ROOT & BODY SAFETY            */
+/* ============================= */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* 🔥 MOST IMPORTANT */
+}
+
+/* ============================= */
+/* GLOBAL FONT                   */
+/* ============================= */
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/Proxima Nova Font.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/Proxima_Nova_Semibold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/FontsFree-Net-Proxima-Nova-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+/* ============================= */
+/* BODY                           */
+/* ============================= */
+body {
+  font-family: "ProximaNova", sans-serif;
+  background: #ffffff;
+  color: #2a2d32;
+}
+
+/* ============================= */
+/* IMAGE & SVG SAFETY            */
+/* ============================= */
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================= */
+/* APP WRAPPER                   */
+/* ============================= */
+.app-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ============================= */
+/* FIGMA CONTAINER (1440 LOCK)   */
+/* ============================= */
+.figma-container {
+  width: 1440px;
+  max-width: 1440px;
+  overflow-x: hidden; /* extra safety */
+}

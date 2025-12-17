@@ -1,0 +1,166 @@
+/* ========================= */
+/* HERO WRAPPER              */
+/* ========================= */
+.hero-wrapper {
+  width: 100%;
+  background: #eef7f9;
+  padding: 50px 0;              /* ✅ only top-bottom */
+  overflow-x: hidden;           /* safety */
+}
+
+/* ========================= */
+/* HERO CONTAINER            */
+/* ========================= */
+.hero {
+  max-width: 1231px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+/* ========================= */
+/* LEFT CONTENT              */
+/* ========================= */
+.hero-left {
+  max-width: 625px;
+}
+
+/* ========================= */
+/* BADGE                     */
+/* ========================= */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 8px 16px;
+  margin-bottom: 24px;
+
+  background: rgba(33, 140, 172, 0.1);
+  color: #218cac;
+
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ========================= */
+/* TITLE                     */
+/* ========================= */
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #2a2d32;
+
+  margin-bottom: 20px;
+}
+
+.hero-title span {
+  color: #218cac;
+}
+
+/* ========================= */
+/* SUBTITLE                  */
+/* ========================= */
+.hero-subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #2a2d32;
+
+  margin-bottom: 12px;
+}
+
+/* ========================= */
+/* DESCRIPTION               */
+/* ========================= */
+.hero-description {
+  max-width: 576px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #4b5563;
+
+  margin-bottom: 32px;
+}
+
+/* ========================= */
+/* ACTION BUTTONS            */
+/* ========================= */
+.hero-actions {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.btn-primary {
+  height: 48px;
+  padding: 0 27px;
+
+  background: #218cac;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  height: 48px;
+  padding: 0 27px;
+
+  background: transparent;
+  color: #218cac;
+
+  border: 1px solid #218cac;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* FEATURES ROW              */
+/* ========================= */
+.hero-features {
+  display: flex;
+  gap: 30px;
+
+  font-size: 16px;
+  font-weight: 400;
+  color: #2a2d32;
+}
+
+.hero-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 8px 14px;
+  border-radius: 12px;
+
+  background: rgba(33, 140, 172, 0.08);
+}
+
+.hero-feature img {
+  width: 22px;
+  height: 22px;
+}
+
+/* ========================= */
+/* RIGHT IMAGE               */
+/* ========================= */
+.hero-right img {
+  width: 100%;
+  max-width: 572px;     /* ✅ safe */
+  border-radius: 20px;
+}

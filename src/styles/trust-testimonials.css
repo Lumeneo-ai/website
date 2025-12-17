@@ -1,0 +1,234 @@
+/* ============================= */
+/* WRAPPER                       */
+/* ============================= */
+.tt-wrapper {
+  width: 100%;
+  background: #eef7f9;
+  padding: 120px 0 0;
+  overflow-x: hidden; /* 🔒 no scroll */
+}
+
+/* ================= TRUST ================= */
+.trust-section {
+    margin-top: -40px;
+  max-width: 1440px;
+  height: 480px;
+  /* margin: 0 auto; */
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+.trust-section h2 {
+    /* width: 907px; */
+    height: 44px;
+  font-size: 44px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-weight: 700;
+  color: #218CAC;
+  margin-bottom: 12px;
+}
+
+.trust-subtitle {
+  font-size: 20px;
+  font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0px;
+  color: #2A2D32;
+  margin-bottom: 60px;
+}
+
+/* TRUST CARDS */
+.trust-cards {
+    /* width: 862px; */
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.trust-card {
+  width: 254px;
+  background: #ffffff;
+  padding: 18px 12px;
+  gap: 14px;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.trust-icon {
+  width: 56px;
+  height: 56px;
+  background: #e6f3f7;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trust-icon img {
+  width: 26px;
+  height: 26px;
+}
+
+.trust-card h4 {
+  font-size: 20px;
+  font-style: "bold";
+  /* font-size: 20px; */
+  font-weight: 700;
+   line-height: 100%;
+  letter-spacing: 0px;
+  color: #218CAC;
+  margin-bottom: 10px;
+}
+
+.trust-card p {
+  font-size: 16px;
+  font-style: "regular";
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: #2A2D32;
+}
+
+/* ================= TESTIMONIALS ================= */
+.testimonial-section {
+    margin-top: -80px;
+    margin-bottom: 100px;
+  background: #ffffff;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.testimonial-section h2 {
+    margin-top: -80px;
+  font-size: 44px;
+  font-weight: 700;
+  color: #218cac;
+  margin-bottom: 12px;
+}
+
+.testimonial-subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2a2d32;
+  margin-bottom: 60px;
+}
+
+/* TESTIMONIAL CARDS */
+.testimonial-cards {
+  max-width: 1232px;
+  height: 293px;
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 40px;
+}
+
+.testimonial-card {
+  width: 390px;
+  height: 292.96px;
+  background: #eaf6f9;
+  padding: 32px;
+  border-radius: 24px;
+  text-align: left;
+}
+
+/* STARS */
+.stars {
+    height: 24px;
+    width: 193px;
+  color: #f5b400;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* TEXT */
+.quote-title {
+    height: 48px;
+    width: 300px;
+  font-size: 20px;
+  font-style: "semi-bold";
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #2a2d32;
+  margin-bottom: 12px;
+}
+.quote-title2 {
+    height: 48px;
+    width: 350px;
+  font-size: 20px;
+  font-style: "semi-bold";
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #2a2d32;
+  margin-bottom: 12px;
+}
+.quote-title3 {
+    height: 48px;
+    width: 350px;
+  font-size: 20px;
+  font-style: "semi-bold";
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #2a2d32;
+  margin-bottom: 12px;
+}
+
+.quote-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: "regular";
+  letter-spacing: 0%;
+  color: #2a2d32;
+  margin-bottom: 24px;
+}
+
+/* AUTHOR */
+.author {
+    width: 235px;
+    height: 62.96px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author strong {
+    height: 19px;
+    line-height: 105%;
+    letter-spacing: 0px;
+    font-style: "bold";
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2d32;
+}
+
+.author span {
+  font-size: 13px;
+  color: #666;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .trust-cards,
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
