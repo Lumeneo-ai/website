@@ -57,7 +57,7 @@
 /* ============================= */
 .feature-content {
   max-width: 604px;
-  height: 379px;
+  height: auto;
   gap: 50px;
 }
 
@@ -89,30 +89,31 @@
 /* ============================= */
 .feature-content h2 {
   width: 495px;
-  height: 44px;
+  height: auto;
   font-size: 44px;
   font-weight: 700;
-  line-height: 100%;
+  line-height: 1.1;
   color: #218CAC;
   margin-bottom: 12px;
 }
 
 .feature-content h3 {
   width: 581px;
-  height: 44px;
+ 
   font-size: 44px;
   font-weight: 700;
-  line-height: 100%;
+  line-height: 1.1;
   color: #218CAC;
   margin-bottom: 12px;
 }
 
 .feature-content h4 {
-  width: 260px;
-  height: 20px;
+  width: 604px;
+  height: auto;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 16px;
+  line-height: 24px;
 }
 
 /* ============================= */
@@ -226,10 +227,10 @@
 /* ============================= */
 /* RESPONSIVE                    */
 /* ============================= */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .feature-row,
   .feature-row.reverse {
     flex-direction: column;
     gap: 60px;
   }
-}
+} */

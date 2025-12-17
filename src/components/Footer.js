@@ -28,29 +28,60 @@ const Footer = () => {
         {/* PRODUCT */}
         <div className="footer-col">
           <h4>Product</h4>
-          <a href="#">Features</a>
-          <a href="#">Technology</a>
-          <a href="#">Pricing</a>
-          <a href="#">Security</a>
+          <a href="/features">Features</a>
+          <a href="/technology">Technology</a>
+          <a href="/pricing">Pricing</a>
+          <a href="/security">Security</a>
         </div>
 
         {/* COMPANY */}
         <div className="footer-col">
           <h4>Company</h4>
-          <a href="#">About Us</a>
-          <a href="#">Careers</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
+          <a href="/about">About Us</a>
+          <a href="/careers">Careers</a>
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact</a>
         </div>
 
         {/* CONNECT */}
         <div className="footer-connect">
           <h4>Connect</h4>
           <div className="footer-socials">
-            <img src={twitter} alt="Twitter" />
-            <img src={linkedin} alt="LinkedIn" />
-            <img src={facebook} alt="Facebook" />
-            <img src={instagram} alt="Instagram" />
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <img src={twitter} alt="Twitter" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <img src={linkedin} alt="LinkedIn" />
+            </a>
+
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <img src={facebook} alt="Facebook" />
+            </a>
+
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img src={instagram} alt="Instagram" />
+            </a>
           </div>
         </div>
 
@@ -61,11 +92,11 @@ const Footer = () => {
         <span>Copyright © 2025 Automitra. All rights reserved.</span>
 
         <div className="footer-links">
-          <span>Privacy Policy</span>
+          <a href="/privacy-policy">Privacy Policy</a>
           <span>|</span>
-          <span>Terms of Service</span>
+          <a href="/terms">Terms of Service</a>
           <span>|</span>
-          <span>Cookie Policy</span>
+          <a href="/cookie-policy">Cookie Policy</a>
         </div>
       </div>
 
