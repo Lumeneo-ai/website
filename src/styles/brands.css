@@ -3,9 +3,8 @@
 /* ============================= */
 .brands-wrapper {
   width: 100%;
-  /* background-color: #E5E7EB; */
   background: #ffffff;
-  padding: 48px 0;          /* ✅ only top-bottom */
+  padding: 48px 0;
 }
 
 /* ============================= */
@@ -14,7 +13,7 @@
 .brands-container {
   max-width: 1232px;
   margin: 0 auto;
-overflow: hidden;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,15 +24,14 @@ overflow: hidden;
 /* TITLE                         */
 /* ============================= */
 .brands-title {
-    height: auto;
-    width: 633px;
+  height: auto;
+  width: 633px;        /* SAME for desktop */
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 0px;
   color: #218CAC;
   text-align: center;
-  white-space: nowrap;
+  white-space: nowrap; /* SAME desktop */
 }
 
 /* ============================= */
@@ -42,12 +40,10 @@ overflow: hidden;
 .brands-row {
   width: 100%;
   max-width: 1232px;
-  height: 48px;
-
+  height: 48px;        /* SAME desktop */
   display: flex;
   align-items: center;
-  justify-content: space-evenly; /* ✅ gap removed */
-
+  justify-content: space-evenly;
   opacity: 0.6;
 }
 
@@ -58,7 +54,6 @@ overflow: hidden;
   height: 40px;
   width: 36px;
   max-width: 128px;
-
   object-fit: contain;
   filter: grayscale(100%);
   transition: all 0.3s ease;
@@ -67,4 +62,29 @@ overflow: hidden;
 .brands-row img:hover {
   filter: grayscale(0%);
   opacity: 1;
+}
+
+/* ============================= */
+/* 📱 MOBILE RESPONSIVE ONLY     */
+/* ============================= */
+@media (max-width: 768px) {
+  .brands-title {
+    width: 100%;       /* allow wrapping */
+    white-space: normal;
+    font-size: 22px;
+    padding: 0 16px;
+  }
+
+  .brands-row {
+    height: auto;      /* remove fixed height */
+    flex-wrap: wrap;   /* wrap logos */
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .brands-row img {
+    height: 36px;
+    width: auto;
+    max-width: 90px;   /* smaller logos on mobile */
+  }
 }

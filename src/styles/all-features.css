@@ -3,22 +3,20 @@
 /* ============================= */
 .all-features-wrapper {
   width: 100%;
-  margin-top: -80px;
-  margin-bottom: -40px;
-  padding: 120px 0;
+  padding: 100px 0;
   background: #ffffff;
-  overflow-x: hidden;
 }
 
 /* ============================= */
 /* CONTAINER                     */
 /* ============================= */
 .all-features {
-  max-width: 1232px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 140px;
+  gap: 100px;
+  padding: 0 20px;
 }
 
 /* ============================= */
@@ -28,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 80px;
+  gap: 60px;
 }
 
 .feature-row.reverse {
@@ -39,41 +37,32 @@
 /* IMAGE                         */
 /* ============================= */
 .feature-image {
-  max-width: 568px;
   width: 100%;
-  height: 588px;
-  position: relative; /* badge anchor */
+  max-width: 550px;
+  position: relative;
 }
 
 .feature-image img {
   width: 100%;
-  height: 568px;
+  height: auto;
   border-radius: 24px;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* ============================= */
-/* CONTENT (UNTOUCHED)           */
+/* CONTENT                       */
 /* ============================= */
 .feature-content {
-  max-width: 604px;
-  height: auto;
-  gap: 50px;
+  max-width: 550px;
 }
 
 /* ============================= */
-/* PILL (UNTOUCHED)              */
+/* PILL                          */
 /* ============================= */
-/* .pill { width: 160px; }
-.pill2 { width: 167px; }
-.pill3 { width: 199px; }
-.pill4 { width: 177px; } */
-
 .pill,
 .pill2,
 .pill3,
 .pill4 {
-  height: 36px;
   display: inline-block;
   background: rgba(33, 140, 172, 0.1);
   color: #218CAC;
@@ -85,52 +74,36 @@
 }
 
 /* ============================= */
-/* HEADINGS (UNTOUCHED)          */
+/* HEADINGS                      */
 /* ============================= */
-.feature-content h2 {
-  width: 495px;
-  height: auto;
-  font-size: 44px;
-  font-weight: 700;
-  line-height: 1.1;
-  color: #218CAC;
-  margin-bottom: 12px;
-}
-
+.feature-content h2,
 .feature-content h3 {
-  width: 581px;
- 
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 1.1;
   color: #218CAC;
   margin-bottom: 12px;
+  line-height: 1.2;
 }
 
 .feature-content h4 {
-  /* width: 604px; */
-  height: auto;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 16px;
-  line-height: 24px;
+  color: #2a2d32;
 }
 
 /* ============================= */
-/* TEXT (UNTOUCHED)              */
+/* TEXT                          */
 /* ============================= */
 .feature-content p {
-  margin-top: 20px;
-  width: 604px;
-  height: 72px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
   color: #555;
   margin-bottom: 20px;
 }
 
 /* ============================= */
-/* LIST (UNTOUCHED)              */
+/* LIST                          */
 /* ============================= */
 .feature-list {
   list-style: none;
@@ -146,91 +119,90 @@
 
 .feature-list li::before {
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   display: inline-block;
   background-image: url("../assets/bulletpoint.png");
-  background-repeat: no-repeat;
   background-size: contain;
   margin-right: 10px;
-  transform: translateY(2px);
 }
 
 /* ============================= */
-/* NOTE (UNTOUCHED)              */
+/* NOTE                          */
 /* ============================= */
 .note {
   font-size: 15px;
   color: #2A2D32;
 }
 
-
 /* ============================= */
-/* BADGES (PIXEL FIXED)          */
+/* BADGE                         */
 /* ============================= */
 .badge {
   position: absolute;
-  font-family: inherit; 
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   background: #ffffff;
   padding: 10px 14px;
   border-radius: 16px;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
   font-size: 13px;
-  z-index: 10;
 }
-.badge strong {
-  font-weight: 600; /* headings jaisa */
-}
-
-.badge p {
-  font-weight: 400; /* normal body text jaisa */
-}
-
 
 .badge img {
-  width: 36px;
-  height: 36px;
-
-  /* 🔥 IMPORTANT FIX */
+  width: 32px;
+  height: 32px;
   background-color: #218CAC;
-  padding: 8px;
+  padding: 6px;
   border-radius: 50%;
-
-  object-fit: contain;
 }
 
-/* ============================= */
-/* EXACT BADGE POSITIONS         */
-/* ============================= */
-
-/* 1️⃣ Computer Vision */
+/* Specific badge placements */
 .cv-image .instant-analysis {
-  bottom: -4px;
-  right: 24px;
+  bottom: 10px;
+  right: 10px;
 }
 
-/* 2️⃣ Conversational AI */
 .ca-image .support-247 {
-  top: -22px;
-  left: 24px;
+  top: 10px;
+  left: 10px;
 }
 
-/* 4️⃣ Real-Time Tracking */
 .rt-image .live-updates {
-  bottom: -3px;
-  right: 24px;
+  bottom: 10px;
+  right: 10px;
 }
 
 /* ============================= */
 /* RESPONSIVE                    */
 /* ============================= */
-/* @media (max-width: 1024px) {
-  .feature-row,
+@media (max-width: 1024px) {
+  .feature-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .feature-row.reverse {
     flex-direction: column;
-    gap: 60px;
   }
-} */
+
+  .feature-content {
+    max-width: 100%;
+  }
+
+  .feature-list li {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-content h2,
+  .feature-content h3 {
+    font-size: 32px;
+  }
+
+  .feature-content p {
+    font-size: 16px;
+  }
+}

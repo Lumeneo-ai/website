@@ -3,22 +3,20 @@
 /* ============================= */
 .navbar-wrapper {
   width: 100%;
-  height: 84px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   background: #ffffff;
   border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 /* ============================= */
-/* NAVBAR INNER CONTAINER        */
+/* NAVBAR INNER                 */
 /* ============================= */
 .navbar {
   max-width: 1231px;
-  width: 100%;
+  height: 84px;
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
@@ -26,36 +24,27 @@
 }
 
 /* ============================= */
-/* LEFT - LOGO                   */
+/* LOGO                         */
 /* ============================= */
-.navbar-left {
-  display: flex;
-  align-items: center;
-}
-
 .navbar-left img {
   height: 31px;
   object-fit: contain;
 }
 
 /* ============================= */
-/* CENTER - NAV LINKS            */
+/* DESKTOP CENTER LINKS         */
 /* ============================= */
 .navbar-center {
-  width: 471px;
-
   display: flex;
   align-items: center;
-  justify-content: space-between; /* ✅ gap removed */
+  gap: 32px;
 }
 
 .navbar-center a {
   text-decoration: none;
   color: #2a2d32;
-
   font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
 }
 
 .navbar-center a:hover {
@@ -63,7 +52,7 @@
 }
 
 /* ============================= */
-/* RIGHT - ACTION BUTTONS        */
+/* DESKTOP RIGHT BUTTONS        */
 /* ============================= */
 .navbar-right {
   display: flex;
@@ -71,9 +60,6 @@
   gap: 20px;
 }
 
-/* ============================= */
-/* SIGN IN BUTTON                */
-/* ============================= */
 .btn-outline {
   width: 88px;
   height: 44px;
@@ -88,9 +74,6 @@
   cursor: pointer;
 }
 
-/* ============================= */
-/* REQUEST DEMO BUTTON           */
-/* ============================= */
 .btn-filled {
   width: 160px;
   height: 44px;
@@ -107,4 +90,76 @@
 
 .btn-filled:hover {
   background: #177a99;
+}
+
+/* ============================= */
+/* HAMBURGER (MOBILE ONLY)      */
+/* ============================= */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #218cac;
+  font-weight: bold;
+}
+
+/* ============================= */
+/* MOBILE DROPDOWN              */
+/* ============================= */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+
+  transition: max-height 0.35s ease;
+  border-top: 1px solid #eee;
+}
+
+.mobile-menu.show {
+  max-height: 400px;
+  padding: 18px 0;
+}
+
+.mobile-menu a {
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2a2d32;
+  text-decoration: none;
+}
+
+/* ============================= */
+/* MOBILE BUTTONS (same style)  */
+/* ============================= */
+.mobile-btn {
+  margin: 10px 24px 0;
+  border-radius: 8px;
+}
+
+.mobile-btn.btn-outline {
+  width: 88px;
+  height: 44px;
+}
+
+.mobile-btn.btn-filled {
+  width: 160px;
+  height: 44px;
+}
+
+/* ============================= */
+/* RESPONSIVE VIEW              */
+/* ============================= */
+@media (max-width: 768px) {
+  .navbar-center,
+  .navbar-right {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
