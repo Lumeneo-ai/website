@@ -64,10 +64,10 @@
 /* ============================= */
 /* PILL (UNTOUCHED)              */
 /* ============================= */
-.pill { width: 160px; }
+/* .pill { width: 160px; }
 .pill2 { width: 167px; }
 .pill3 { width: 199px; }
-.pill4 { width: 177px; }
+.pill4 { width: 177px; } */
 
 .pill,
 .pill2,
@@ -108,7 +108,7 @@
 }
 
 .feature-content h4 {
-  width: 604px;
+  /* width: 604px; */
   height: auto;
   font-size: 20px;
   font-weight: 600;

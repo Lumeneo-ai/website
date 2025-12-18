@@ -144,17 +144,20 @@
   display: flex;
   align-items: center;
   gap: 12px;
-
-  padding: 8px 14px;
-  border-radius: 12px;
-
-  background: rgba(33, 140, 172, 0.08);
+  padding: 6px 0; /* remove background from whole pill */
+  background: transparent; /* no background */
 }
 
+/* background bubble only behind icon */
 .hero-feature img {
-  width: 22px;
-  height: 22px;
+  width: 40px;
+  height: 40px;
+  background: rgba(33, 140, 172, 0.12);
+  padding: 6px;
+  border-radius: 8px;
+  object-fit: contain;
 }
+
 
 /* ========================= */
 /* RIGHT IMAGE               */
