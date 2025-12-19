@@ -32,7 +32,7 @@
 }
 
 /* ============================= */
-/* DESKTOP CENTER LINKS         */
+/* CENTER LINKS (DESKTOP)       */
 /* ============================= */
 .navbar-center {
   display: flex;
@@ -52,7 +52,7 @@
 }
 
 /* ============================= */
-/* DESKTOP RIGHT BUTTONS        */
+/* RIGHT BUTTONS (DESKTOP)      */
 /* ============================= */
 .navbar-right {
   display: flex;
@@ -63,11 +63,9 @@
 .btn-outline {
   width: 88px;
   height: 44px;
-
   background: transparent;
   border: 1px solid #218cac;
   color: #218cac;
-
   border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
@@ -77,11 +75,9 @@
 .btn-filled {
   width: 160px;
   height: 44px;
-
   background: #218cac;
   border: none;
   color: #ffffff;
-
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
@@ -93,18 +89,18 @@
 }
 
 /* ============================= */
-/* HAMBURGER (MOBILE ONLY)      */
+/* HAMBURGER                    */
 /* ============================= */
 .hamburger {
   display: none;
-  font-size: 30px;
+  font-size: 32px;
   cursor: pointer;
   color: #218cac;
   font-weight: bold;
 }
 
 /* ============================= */
-/* MOBILE DROPDOWN              */
+/* MOBILE MENU                  */
 /* ============================= */
 .mobile-menu {
   display: flex;
@@ -113,14 +109,12 @@
   width: 100%;
   overflow: hidden;
   max-height: 0;
-  padding: 0;
-
   transition: max-height 0.35s ease;
   border-top: 1px solid #eee;
 }
 
 .mobile-menu.show {
-  max-height: 400px;
+  max-height: 360px;
   padding: 18px 0;
 }
 
@@ -133,21 +127,27 @@
 }
 
 /* ============================= */
-/* MOBILE BUTTONS (same style)  */
+/* MOBILE BUTTONS               */
 /* ============================= */
+.mobile-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  padding: 10px 24px;
+}
+
 .mobile-btn {
-  margin: 10px 24px 0;
   border-radius: 8px;
 }
 
 .mobile-btn.btn-outline {
   width: 88px;
-  height: 44px;
+  height: 40px;
 }
 
 .mobile-btn.btn-filled {
-  width: 160px;
-  height: 44px;
+  width: 140px;
+  height: 40px;
 }
 
 /* ============================= */
@@ -161,5 +161,21 @@
 
   .hamburger {
     display: block;
+  }
+
+  .navbar {
+    justify-content: center;
+    position: relative;
+  }
+
+  .navbar-left {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hamburger {
+    position: absolute;
+    left: 20px;
   }
 }

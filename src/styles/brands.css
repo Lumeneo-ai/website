@@ -87,4 +87,10 @@
     width: auto;
     max-width: 90px;   /* smaller logos on mobile */
   }
+  @media (max-width: 768px) {
+  .brands-wrapper {
+    padding: 24px 0 10px;   /* ↓ reduced bottom padding */
+  }
+}
+
 }

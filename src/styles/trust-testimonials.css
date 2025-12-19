@@ -106,7 +106,7 @@
   background: #eaf6f9;
   padding: 32px;
   border-radius: 24px;
-  text-align: left;
+  text-align: left; /* DEFAULT keep left */
 }
 
 .author {
@@ -159,10 +159,10 @@
 
   .testimonial-card {
     width: 90%;
-    text-align: center;
+    text-align: left !important; /* FIX */
   }
 
   .author {
-    justify-content: center;
+    justify-content: flex-start !important; /* FIX */
   }
 }

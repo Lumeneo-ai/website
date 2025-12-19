@@ -67,9 +67,9 @@
 }
 
 .footer-socials img {
-  width: 50px;
-  height: 50px;
-  padding: 10px;
+   width: 64px;
+  height: 64px;
+  padding: 12px;     /* increased padding */
   border-radius: 50%;
   cursor: pointer;
   object-fit: contain;
@@ -119,19 +119,35 @@
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
+
+  /* bottom section stays centered — already correct */
   .footer-bottom {
     flex-direction: column;
     text-align: center;
     gap: 10px;
   }
 
-  .footer-top {
+  /* MOBILE — center brand content ONLY */
+  .footer-brand {
+    margin: 0 auto;
     text-align: center;
   }
 
+  .footer-logo {
+    display: block;
+    margin: 0 auto 14px;
+  }
+
+  .footer-brand p {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* center columns & connect */
   .footer-col,
   .footer-connect {
     margin: 0 auto;
+    text-align: center;
   }
 
   .footer-socials {

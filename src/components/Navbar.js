@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
 
         {/* HAMBURGER (Mobile Only) */}
-        <div 
+        <div
           className="hamburger"
           onClick={() => setOpen(!open)}
         >
@@ -38,15 +38,17 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* MOBILE MENU — ALWAYS STAYS BELOW NAV */}
+      {/* MOBILE MENU */}
       <div className={`mobile-menu ${open ? "show" : ""}`}>
         <a onClick={() => setOpen(false)} href="#features">Features</a>
         <a onClick={() => setOpen(false)} href="#technology">Technology</a>
         <a onClick={() => setOpen(false)} href="#testimonials">Testimonials</a>
         <a onClick={() => setOpen(false)} href="#contact">Contact</a>
 
-        <button className="btn-outline mobile-btn">Sign In</button>
-        <button className="btn-filled mobile-btn">Request Demo</button>
+        <div className="mobile-buttons">
+          <button className="btn-outline mobile-btn">Sign In</button>
+          <button className="btn-filled mobile-btn">Request Demo</button>
+        </div>
       </div>
 
     </header>
